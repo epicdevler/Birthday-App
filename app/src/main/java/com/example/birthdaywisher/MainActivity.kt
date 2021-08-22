@@ -12,14 +12,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-            
+
+
+//        Initialize UI Views in Buttons
         val btn: Button = findViewById(R.id.button)
         val layoutBackground: androidx.constraintlayout.widget.ConstraintLayout =
             findViewById(R.id.parentLayout)
         val image: ImageView = findViewById(R.id.imageView)
 
+
+//        Handle Click Listener fo UI Button:
         btn.setOnClickListener {
+
+//            Change background color
             layoutBackground.setBackgroundColor(R.color.purple_200)
+
+//            Set image visibility to Visible
             image.visibility = View.VISIBLE
         }
 
